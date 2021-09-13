@@ -28,11 +28,16 @@ console.log(processFirstItem(['foo','bar'],function(str){return str+str}));
   Study the code for counter1 and counter2, then answer the questions below.
   
   1. What is the difference between counter1 and counter2?
-  
+
+     counter 1 is invoking the function counterMaker which is demostrating closure concept,counter2 does not it has no meemory .
+
   2. Which of the two uses a closure? How can you tell?
-  
+
+      counter1, you can tell becasue of the function inside of the function being invoked from the the outer fuction.
+
   3. In what scenario would the counter1 code be preferable? In what scenario would 
      counter2 be better?  
+     couter1 would be used if you needed to hold that previous count and get the new count.counter2 is just incrementing the count variable with no memory of previous value.
 */
 
 // counter1 code
@@ -62,8 +67,8 @@ Use the inning function below to do the following:
 NOTE: This will be a callback function for the tasks below
 */
 
-function inning(/*Code Here*/){
-    /*Code Here*/
+function inning(){
+  return Math.floor(Math.random() * 3);
 }
 
 
